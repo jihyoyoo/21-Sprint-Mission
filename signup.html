@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <main class="main login">
+  <main class="main signup">
     <!-- 판다마켓 로고 -->
     <a href="index.html"><img class="logo-img" src="images/logo.png" alt="로고 이미지"></a>
 
@@ -25,7 +25,13 @@
         <label for="user-email">이메일</label>
         <input class="input-box" id="user-email" type="email" placeholder="이메일 입력">
       </div>
-      
+
+      <!-- 닉네임 입력 영역 -->
+      <div class="user-name-container">
+        <label for="user-name">닉네임</label>
+        <input class="input-box" id="user-name" type="text" placeholder="닉네임 입력">
+      </div>
+
       <!-- 비밀번호 입력 영역 -->
       <div class="user-password-container">
         <label for="user-password">비밀번호</label>
@@ -33,6 +39,17 @@
           <input class="input-box" id="user-password" type="password" placeholder="비밀번호 입력">
           <button class="input-btn" type="button">
             <img class="input-btn-img" src="images/eye_closed.png" alt="감은 눈모양 이미지">
+          </button>
+        </div>
+      </div>
+      
+      <!-- 비밀번호 확인 영역 -->
+      <div class="user-password-check-container">
+        <label for="user-password-check">비밀번호 확인</label>
+        <div class="input-wrapper">
+          <input class="input-box" id="user-password-check" type="password" placeholder="비밀번호 확인 입력">
+          <button class="input-btn" type="button">
+            <img class="input-btn-img" src="images/eye.png" alt="감은 눈모양 이미지">
           </button>
         </div>
       </div>
@@ -49,10 +66,10 @@
         </div>
       </div>
 
-      <!-- 회원가입 영역 -->
-      <div class="sign-up">
-        <span class="sign-up-text">판다마켓이 처음이신가요?</span>
-        <a class="sign-up-btn" href="signup.html">회원가입</a>
+      <!-- 로그인 영역 -->
+      <div class="log-in">
+        <span class="log-in-text">이미 회원이신가요?</span>
+        <a class="sign-up-btn" href="login.html">로그인</a>
       </div>
     </section>
   </main>

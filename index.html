@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>판다마켓</title>
     <link rel="icon" type="icon" href="logo.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <body>
     <!-- 헤더 영역 -->
     <header>
-        <div class="container">
+        <div class="header-container">
           <a href="index.html">
             <img class="logo" src="images/logo.png" alt="판다마켓 로고 이미지">
           </a>
@@ -35,12 +35,12 @@
       </div>   
     </main>
     
-    <!-- 섹션1 -->
-    <section>
+    <!-- 섹션1: 인기 상품 영역 -->
+    <section class="section">
       <div class="section-container">
-        <div class="section1-content">
+        <div class="hot-item-content">
           <img class="section-img" src="images/section1.png" alt="섹션1 이미지">
-          <div class="section-text-left">
+          <div class="section-text left">
             <span class="text1">Hot item</span>
             <h1 class="text2">
               인기 상품을<br>
@@ -55,10 +55,10 @@
       </div>
     </section>
 
-    <!-- 섹션2 -->
-    <section>
+    <!-- 섹션2: 검색 영역 -->
+    <section class="section">
       <div class="section-container">
-        <div class="section2-content">
+        <div class="search-content">
           <div class="section-text-right">
             <span class="text1 right">Search</span>
             <h1 class="text2 right">
@@ -75,12 +75,12 @@
       </div>
     </section>
 
-    <!-- 섹션3 -->
-    <section>
+    <!-- 섹션3: 등록 영역 -->
+    <section class="section">
       <div class="section-container">
-        <div class="section3-content">
+        <div class="register-content">
           <img class="section-img" src="images/section3.png" alt="섹션3 이미지">
-          <div class="section-text-left">
+          <div class="section-text">
             <span class="text1">Register</span>
             <h1 class="text2">
               판매를 원하는<br>
@@ -98,8 +98,8 @@
     <!-- 회색 빈 공간 -->
     <div class="empty-area"></div>
   
-    <!-- 맨아래 영역 -->
-    <main>
+    <!-- 신뢰 문구 영역 -->
+    <section class="trust-message-section">
       <div class="main-container bottom">
         <div class="main-text-content">
           <span class="main-text">
@@ -108,7 +108,7 @@
           </span>
         </div>
       </div>   
-    </main>
+    </section>
 
     <!-- 푸터 영역 -->
     <footer>
@@ -119,10 +119,10 @@
           <a href="faq.html" class="information-text">FAQ</a>
         </div>
         <div class="sns-site">
-          <a href="https://www.facebook.com/" target="_blank"><img class="sns-image" src="images/facebook.png" alt="페이스북 이미지"></a> 
-          <a href="https://www.twitter.com/" target="_blank"><img class="sns-image" src="images/twitter.png" alt="트위터 이미지"></a>
-          <a href="https://www.youtube.com/" target="_blank"><img class="sns-image" src="images/youtube.png" alt="유튜브 이미지"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img class="sns-image" src="images/instagram.png" alt="인스타그램 이미지"></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/facebook.png" alt="페이스북 이미지"></a> 
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/twitter.png" alt="트위터 이미지"></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/youtube.png" alt="유튜브 이미지"></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/instagram.png" alt="인스타그램 이미지"></a>
         </div>
       </div>
     </footer>
