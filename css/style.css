@@ -9,11 +9,11 @@ body{
 
 /* 헤더 영역 */
 header{
-  background-color: #fff;
+  background-color: var(--color-white);
   height: 70px;
   width: 100%;
   padding: 9px 200px; 
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   inset: 0;
   z-index: 1;
@@ -35,8 +35,8 @@ header{
   display: inline-block;
   margin-top: 0;
   text-align: center;
-  background-color: #3692FF;
-  color: #F3F4F6;
+  background-color: var(--color-blue-100);
+  color: var(--color-gray-100);
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
@@ -51,7 +51,7 @@ header{
 
 /* 메인 영역 */
 main{
-  background-color: #CFE5FF;
+  background-color: var(--color-main-bg);
   display: flex;
   height: 540px;
   width: 100%;
@@ -77,21 +77,21 @@ main{
 .main-text{
   display: block;
   margin-bottom: 32px;
-  color: #374151;
+  color: var(--color-gray-700);
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
 }
 .main-btn{
   display: inline-block;
-  background-color: #3692FF;
+  background-color: var(--color-blue-100);
   height: 56px;
   width: 100%;
   padding: 12px 0;
   margin-bottom: 0px;
   border-radius: 40px;
   letter-spacing: 2px;
-  color: #F9FAFB;
+  color: var(--color-gray-50);
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -100,7 +100,7 @@ main{
   cursor: pointer;
 }
 .btn:hover{
-  background-color: #1251AA;
+  background-color: var(--color-blue-300);
 }
 
 
@@ -118,7 +118,7 @@ main{
   padding: 0 64px;
 }
 .hot-item-content{
-  background-color: #FCFCFC;
+  background-color: var(--color-bg);
   border-radius: 12px;
   padding: 0 20px 0 20px;
   display: flex;
@@ -126,7 +126,7 @@ main{
   justify-content: space-between;
 }
 .search-content{
-  background-color: #FCFCFC;
+  background-color: var(--color-bg);
   border-radius: 12px;
   padding: 0 20px 0 20px;
   display: flex;
@@ -134,7 +134,7 @@ main{
   justify-content: space-between;
 }
 .register-content{
-  background-color: #FCFCFC;
+  background-color: var(--color-bg);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -168,7 +168,7 @@ main{
   text-align: right;
 }
 .text1{
-  color: #3692FF;
+  color: var(--color-blue-100);
   font-family: 'Abhaya Libre Extra Bold', sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -176,14 +176,14 @@ main{
   line-height: 26px;
 }
 .text2{
-  color: #374151;
+  color: var(--color-gray-700);
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
   margin-top: 10px;
 }
 .text3{
-  color: #374151;
+  color: var(--color-gray-700);
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -191,14 +191,14 @@ main{
 
 /* 회색 빈 공간 */
 .empty-area{
-  background-color: #FCFCFC;
+  background-color: var(--color-bg);
   height: 150px;
   width: 100%;
 }
 
 /* 신뢰 문구 영역 */
 .trust-message-section{
-  background-color: #CFE5FF;
+  background-color: var(--color-main-bg);
   display: flex;
   height: 540px;
   width: 100%;
@@ -209,7 +209,7 @@ main{
 
 /* 푸터 영역 */
 footer{
-  background-color: #111827;
+  background-color: var(--color-gray-900);
   height: 160px;
   width: 100%;
   padding: 32px;
@@ -221,7 +221,7 @@ footer{
   margin: 0 auto;
 }
 .footer-container > span{
-  color: #9CA3AF;
+  color: var(--color-gray-400);
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
@@ -232,7 +232,7 @@ footer{
   cursor: pointer;
 }
 .information-text{
-  color: #E5E7EB;
+  color: var(--color-gray-200);
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
