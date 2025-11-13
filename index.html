@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>판다마켓</title>
     <link rel="icon" type="icon" href="logo.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <header>
         <div class="header-container">
           <a href="index.html">
-            <img class="logo" src="images/logo.png" alt="판다마켓 로고 이미지">
+            <img class="logo" src="images/logo.png" alt="">
           </a>
           <a class="login-btn btn" href="login.html">로그인</a>
         </div>
@@ -25,91 +25,95 @@
    
     <!-- 메인 영역 -->
     <main>
-      <div class="main-container">
-        <div class="main-text-content">
-          <span class="main-text">
-            일상의 모든 물건을<br>
-            거래해 보세요
-          </span>
-          <a class="main-btn btn" href="items.html">구경하러 가기</a>
-        </div>
-      </div>   
-    </main>
+      <!-- 구경하러 가기 영역 -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-text-content">
+            <span class="hero-text">
+              일상의 모든 물건을<br>
+              거래해 보세요
+            </span>
+            <a class="hero-btn btn" href="items.html">구경하러 가기</a>
+          </div>
+        </div>   
+      </section>
     
-    <!-- 섹션1: 인기 상품 영역 -->
-    <section class="section">
-      <div class="section-container">
-        <div class="hot-item-content">
-          <img class="section-img" src="images/section1.png" alt="섹션1 이미지">
-          <div class="section-text left">
-            <span class="text1">Hot item</span>
-            <h1 class="text2">
-              인기 상품을<br>
-              확인해 보세요
-            </h1>
-            <span class="text3">
-              가장 HOT한 중고거래 물품을<br>
-              판다 마켓에서 확인해 보세요
-            </span>
+    
+      <!-- 섹션1: 인기 상품 영역 -->
+      <section class="section">
+        <div class="section-container">
+          <div class="hot-item-content">
+            <img class="content-img" src="images/section1.png" alt="">
+            <div class="content-text-container left">
+              <span class="content-title">Hot item</span>
+              <h1 class="content-main-text">
+                인기 상품을<br>
+                확인해 보세요
+              </h1>
+              <span class="content-sub-text">
+                가장 HOT한 중고거래 물품을<br>
+                판다 마켓에서 확인해 보세요
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 섹션2: 검색 영역 -->
-    <section class="section">
-      <div class="section-container">
-        <div class="search-content">
-          <div class="section-text-right">
-            <span class="text1 right">Search</span>
-            <h1 class="text2 right">
-              구매를 원하는<br>
-              상품을 검색하세요
-            </h1>
-            <span class="text3 right">
-              구매하고 싶은 물품은 검색해서<br>
-              쉽게 찾아보세요
-            </span>
-          </div>
-          <img class="section-img" src="images/section2.png" alt="섹션2 이미지">
-        </div>
-      </div>
-    </section>
-
-    <!-- 섹션3: 등록 영역 -->
-    <section class="section">
-      <div class="section-container">
-        <div class="register-content">
-          <img class="section-img" src="images/section3.png" alt="섹션3 이미지">
-          <div class="section-text">
-            <span class="text1">Register</span>
-            <h1 class="text2">
-              판매를 원하는<br>
-              상품을 등록하세요
-            </h1>
-            <span class="text3">
-              어떤 물건이든 판매하고 싶은 상품을<br>
-              쉽게 등록하세요
-            </span>
+      <!-- 섹션2: 검색 영역 -->
+      <section class="section">
+        <div class="section-container">
+          <div class="search-content">
+            <div class="content-text-container-right">
+              <span class="content-title right">Search</span>
+              <h1 class="content-main-text right">
+                구매를 원하는<br>
+                상품을 검색하세요
+              </h1>
+              <span class="content-sub-text right">
+                구매하고 싶은 물품은 검색해서<br>
+                쉽게 찾아보세요
+              </span>
+            </div>
+            <img class="content-img" src="images/section2.png" alt="">
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 회색 빈 공간 -->
-    <div class="empty-area"></div>
-  
-    <!-- 신뢰 문구 영역 -->
-    <section class="trust-message-section">
-      <div class="main-container bottom">
-        <div class="main-text-content">
-          <span class="main-text">
-            믿을 수 있는<br>
-            판다마켓 중고거래
-          </span>
+      <!-- 섹션3: 등록 영역 -->
+      <section class="section">
+        <div class="section-container">
+          <div class="register-content">
+            <img class="content-img" src="images/section3.png" alt="">
+            <div class="content-text-container">
+              <span class="content-title">Register</span>
+              <h1 class="content-main-text">
+                판매를 원하는<br>
+                상품을 등록하세요
+              </h1>
+              <span class="content-sub-text">
+                어떤 물건이든 판매하고 싶은 상품을<br>
+                쉽게 등록하세요
+              </span>
+            </div>
+          </div>
         </div>
-      </div>   
-    </section>
+      </section>
+    
+      <!-- 회색 빈 공간 -->
+      <div class="empty-area"></div>
+    
+      <!-- 신뢰 문구 영역 -->
+      <section class="trust-message-section">
+        <div class="hero-container bottom">
+          <div class="hero-text-content">
+            <span class="hero-text">
+              믿을 수 있는<br>
+              판다마켓 중고거래
+            </span>
+          </div>
+        </div>   
+      </section>
+    </main>
 
     <!-- 푸터 영역 -->
     <footer>
@@ -120,10 +124,10 @@
           <a href="faq.html" class="information-text">FAQ</a>
         </div>
         <div class="sns-site">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/facebook.png" alt="페이스북 이미지"></a> 
-          <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/twitter.png" alt="트위터 이미지"></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/youtube.png" alt="유튜브 이미지"></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/instagram.png" alt="인스타그램 이미지"></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/facebook.png" alt=""></a> 
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/twitter.png" alt=""></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/youtube.png" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="sns-image" src="images/instagram.png" alt=""></a>
         </div>
       </div>
     </footer>

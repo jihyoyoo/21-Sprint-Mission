@@ -1,6 +1,3 @@
-*{
-  box-sizing: border-box;
-}
 body{
   font-family: 'Pretendard', sans-serif;
   margin: 0;
@@ -9,7 +6,7 @@ body{
 
 /* 헤더 영역 */
 header{
-  background-color: var(--color-white);
+  background-color: var(--white);
   height: 70px;
   width: 100%;
   padding: 9px 200px; 
@@ -35,8 +32,8 @@ header{
   display: inline-block;
   margin-top: 0;
   text-align: center;
-  background-color: var(--color-blue-100);
-  color: var(--color-gray-100);
+  background-color: var(--blue-100);
+  color: var(--gray-100);
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
@@ -50,13 +47,13 @@ header{
 }
 
 /* 메인 영역 */
-main{
+.hero{
   background-color: var(--color-main-bg);
   display: flex;
   height: 540px;
   width: 100%;
 }
-.main-container{
+.hero-container{
   position: relative;
   background-image: url(/images/main_image.png);
   background-repeat: no-repeat;
@@ -67,31 +64,31 @@ main{
   height: 100%;
   padding-top: 200px;
 }
-.main-text-content{
+.hero-text-content{
   position: absolute;
   bottom: 0;
   left: 0;
   width: 380px;
   margin-bottom: 60px;
 }
-.main-text{
+.hero-text{
   display: block;
   margin-bottom: 32px;
-  color: var(--color-gray-700);
+  color: var(--gray-700);
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
 }
-.main-btn{
+.hero-btn{
   display: inline-block;
-  background-color: var(--color-blue-100);
+  background-color: var(--blue-100);
   height: 56px;
   width: 100%;
   padding: 12px 0;
   margin-bottom: 0px;
   border-radius: 40px;
   letter-spacing: 2px;
-  color: var(--color-gray-50);
+  color: var(--gray-50);
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
@@ -100,7 +97,7 @@ main{
   cursor: pointer;
 }
 .btn:hover{
-  background-color: var(--color-blue-300);
+  background-color: var(--blue-300);
 }
 
 
@@ -141,19 +138,19 @@ main{
   justify-content: space-between;
   padding: 0 20px 0 0;
 }
-.section-img{
+.content-img{
   max-width: 579px;
   width: 60%;
   height: auto;
   flex: 0 1 auto;
 }
-.section-text{
+.content-text-container{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   flex: 0 1 auto;
 }
-.section-text-right{
+.content-text-container-right{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -167,23 +164,23 @@ main{
 .right{
   text-align: right;
 }
-.text1{
-  color: var(--color-blue-100);
+.content-title{
+  color: var(--blue-100);
   font-family: 'Abhaya Libre Extra Bold', sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 800;
   line-height: 26px;
 }
-.text2{
-  color: var(--color-gray-700);
+.content-main-text{
+  color: var(--gray-700);
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
   margin-top: 10px;
 }
-.text3{
-  color: var(--color-gray-700);
+.content-sub-text{
+  color: var(--gray-700);
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -209,7 +206,7 @@ main{
 
 /* 푸터 영역 */
 footer{
-  background-color: var(--color-gray-900);
+  background-color: var(--gray-900);
   height: 160px;
   width: 100%;
   padding: 32px;
@@ -221,7 +218,7 @@ footer{
   margin: 0 auto;
 }
 .footer-container > span{
-  color: var(--color-gray-400);
+  color: var(--gray-400);
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
@@ -232,7 +229,7 @@ footer{
   cursor: pointer;
 }
 .information-text{
-  color: var(--color-gray-200);
+  color: var(--gray-200);
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
