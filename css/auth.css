@@ -76,7 +76,7 @@ label{
 
 /* 로그인 버튼 */
 .login-btn{
-  background-color: var(--blue-100);
+  background-color: var(--gray-400);
   color: var(--gray-100);
   width: 100%;
   height: 56px;
@@ -91,7 +91,7 @@ label{
   cursor: pointer;
 }
 .login-btn:hover{
-  background-color: var(--blue-300);
+  background-color: var(--gray-500);
 }
 
 /* 간편 로그인 영역 */
@@ -153,4 +153,14 @@ label{
   color: var(--blue-100);
   font-size: 14px;
   font-weight: 500;
+}
+
+/* 모바일 사이즈 */
+@media (min-width: 375px) and (max-width: 767px) {
+  .main {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 100%;
+    max-width: 400px;
+  }
 }

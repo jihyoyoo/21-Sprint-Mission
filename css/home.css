@@ -24,6 +24,10 @@ header{
   margin: 0 auto;
 }
 .logo{
+  background-image: url(/images/logo.png);
+  display: block; 
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 153px;
   height: 51px;
   cursor: pointer;
@@ -186,19 +190,20 @@ header{
   line-height: 32px;
 }
 
-/* 회색 빈 공간 */
-.empty-area{
-  background-color: var(--color-bg);
-  height: 150px;
-  width: 100%;
-}
-
 /* 신뢰 문구 영역 */
 .trust-message-section{
   background-color: var(--color-main-bg);
   display: flex;
   height: 540px;
   width: 100%;
+}
+.trust-message-text {
+  display: block;
+  margin-bottom: 32px;
+  color: var(--gray-700);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
 }
 .bottom{
   background-image: url(/images/bottom.png);
@@ -247,3 +252,236 @@ footer{
   width: 20px;
 }
 
+/* 테블릿 사이즈 */
+@media (min-width: 768px) and (max-width: 1199px) {
+  header {
+    padding: 9px 24px;
+  }
+  .header-container {
+    max-width: none;
+    width: auto;
+  }
+  .hero {
+    height: 770px; 
+    padding-bottom: 0; 
+  }
+  .hero-container {
+    padding-top: 80px;
+    background-size: 100%;
+    width: 100%;
+    height: 100%; 
+  }
+  .hero-text-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px; 
+  }
+  .hero-text {
+    white-space: nowrap; 
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  .hero-text br,
+  .content-main-text br {
+    display: none; 
+  }
+  .hero-btn {
+    display: block;
+    height: 70%;
+    font-size: 18px;
+    width: 350px;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  .section {
+    height: auto;
+    padding: 80px 0; 
+  }
+  .section-container {
+    padding: 0 24px; 
+  }
+  .hot-item-content,
+  .search-content,
+  .register-content {
+    flex-direction: column; 
+    align-items: center;
+    padding: 0; 
+  }
+  .content-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    order: -1;
+  }
+  .content-text-container {
+    width: 100%;
+    align-items: flex-start; 
+    margin: 0;
+    }
+  .content-text-container-right {
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+  }
+  .right {
+    text-align: right;
+  }
+  .content-main-text {
+    font-size: 32px; 
+  }
+  .content-sub-text {
+    font-size: 20px;
+  }
+  .trust-message-section {
+    height: 920px;
+  }
+  .trust-message-text {
+    margin-top: 100px;
+  }
+  footer {
+    padding: 32px 16px;
+  }
+  .footer-container {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* 모바일 사이즈 */
+@media (min-width: 375px) and (max-width: 767px) {
+  header {
+      padding: 9px 16px;
+  }
+  .logo {
+    background-image: url(/images/logo_text.png);
+  }
+  .hero {
+    height: 540px; 
+    padding-bottom: 0; 
+  }
+  .hero-container {
+    padding-top: 60px;
+    background-size: 100%;
+    width: 100%;
+    height: 100%; 
+  }
+  .hero-text-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .hero-text { 
+    width: 250px;
+    height: 100%;
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  .hero-btn {
+    display: block;
+    height: 70%;
+    font-size: 16px;
+    width: 250px;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  .section {
+    height: auto; 
+    padding: 60px 0; 
+  }
+  .section-container {
+    padding: 0 16px; 
+  }
+  .hot-item-content,
+  .search-content,
+  .register-content {
+    flex-direction: column; 
+    align-items: center;
+    padding: 0; 
+  }
+  .content-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    order: -1; 
+  }
+  .content-text-container {
+    width: 100%; 
+    align-items: flex-start;
+    margin: 0; 
+    }
+  .content-text-container-right {
+    width: 100%; 
+    align-items: flex-end;
+    margin: 0; 
+  }
+  .right {
+    text-align: right;
+  }
+  .left {
+    margin: 0;
+  }
+  .content-main-text {
+    font-size: 28px;
+  }
+  .content-sub-text {
+    font-size: 18px;
+  }
+  .trust-message-section {
+    height: 540px;
+  }
+  .trust-message-text {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+  footer {
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 45px;
+    gap: 35px;
+  }
+  .information{
+    order: 1; 
+  }
+  .information > a:first-child{
+    padding-right: 20px;
+  }
+  .information > a:nth-child(1){
+    margin-right: 25px;
+  }
+  .sns-site {
+    order: 2; 
+  }
+  .footer-container > span:first-child {
+    order: 3;
+    flex-basis: 100%;
+    text-align: left; 
+    margin-left: 0; 
+    margin-right: auto;
+  }
+}
