@@ -25,6 +25,7 @@
       <div class="user-email-container">
         <label for="user-email">이메일</label>
         <input class="input-box" id="user-email" type="email" placeholder="이메일 입력">
+        <p class="error-message" id="email-error"></p>
       </div>
       
       <!-- 비밀번호 입력 영역 -->
@@ -33,13 +34,14 @@
         <div class="input-wrapper">
           <input class="input-box" id="user-password" type="password" placeholder="비밀번호 입력">
           <button class="input-btn" type="button">
-            <img class="input-btn-img" src="images/eye_closed.png" alt="감은 눈모양 이미지">
+            <img class="input-btn-img" src="images/eye_close.png" alt="">
           </button>
         </div>
+        <p class="error-message" id="password-error"></p>
       </div>
 
       <!-- 로그인 버튼 -->
-      <a class="login-btn" href="">로그인</a>
+      <a class="login-btn login-btn-toggle" href="">로그인</a>
 
       <!-- 간편 로그인 영역 -->
       <div class="sns-login">
@@ -55,7 +57,10 @@
         <span class="sign-up-text">판다마켓이 처음이신가요?</span>
         <a class="sign-up-btn" href="signup.html">회원가입</a>
       </div>
+
     </section>
+    <script src="js/login.js"></script>
   </main>
+  
 </body>
 </html>

@@ -25,12 +25,15 @@
       <div class="user-email-container">
         <label for="user-email">이메일</label>
         <input class="input-box" id="user-email" type="email" placeholder="이메일 입력">
+        <p class="error-message" id="email-error"></p>
       </div>
+      
 
       <!-- 닉네임 입력 영역 -->
       <div class="user-name-container">
         <label for="user-name">닉네임</label>
         <input class="input-box" id="user-name" type="text" placeholder="닉네임 입력">
+        <p class="error-message" id="name-error"></p>
       </div>
 
       <!-- 비밀번호 입력 영역 -->
@@ -38,10 +41,11 @@
         <label for="user-password">비밀번호</label>
         <div class="input-wrapper">
           <input class="input-box" id="user-password" type="password" placeholder="비밀번호 입력">
-          <button class="input-btn" type="button">
-            <img class="input-btn-img" src="images/eye_closed.png" alt="감은 눈모양 이미지">
+          <button class="input-btn input-btn-password" type="button">
+            <img class="input-btn-img" id="toggle-img-password" src="images/eye_close.png" alt="">
           </button>
         </div>
+        <p class="error-message" id="password-error"></p>
       </div>
       
       <!-- 비밀번호 확인 영역 -->
@@ -49,14 +53,15 @@
         <label for="user-password-check">비밀번호 확인</label>
         <div class="input-wrapper">
           <input class="input-box" id="user-password-check" type="password" placeholder="비밀번호 확인 입력">
-          <button class="input-btn" type="button">
-            <img class="input-btn-img" src="images/eye.png" alt="감은 눈모양 이미지">
+          <button class="input-btn input-btn-password-check" type="button">
+            <img class="input-btn-img" id="toggle-img-check" src="images/eye_close.png" alt="">
           </button>
         </div>
+        <p class="error-message" id="password-check-error"></p>
       </div>
 
       <!-- 로그인 버튼 -->
-      <a class="login-btn" href="">로그인</a>
+      <a class="login-btn signup-btn-toggle" href="">로그인</a>
 
       <!-- 간편 로그인 영역 -->
       <div class="sns-login">
@@ -72,7 +77,9 @@
         <span class="log-in-text">이미 회원이신가요?</span>
         <a class="sign-up-btn" href="login.html">로그인</a>
       </div>
+
     </section>
+    <script src="js/signup.js"></script>
   </main>
 </body>
 </html>

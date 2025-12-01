@@ -59,6 +59,7 @@ label{
   padding: 0 13px;
 }
 .input-btn{
+  display: inline-block;
   display: flex;
   border-style: none;
   background-color: transparent;  
@@ -67,11 +68,22 @@ label{
   top: 50%; 
   right: 16px; 
   transform: translateY(-50%); 
-  padding: 0;
+  padding: 10px 8px 10px 8px;
+
 }
 .input-btn-img{
+  display: block;
   width: 24px;
   height: 24px; 
+}
+.input-box.error {
+  border: 1px solid red;
+}
+.error-message {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: red;
+  display: none;
 }
 
 /* 로그인 버튼 */
