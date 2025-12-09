@@ -1,0 +1,7 @@
+.allItemHead {
+  display: flex;
+}
+.allItemBody {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,20 @@
+.header {
+  max-width: 1920px;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0 200px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.logo{
+  width: 153px;
+  height: 51px;
+}
+
+.profile{
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,4 @@
+.accodion {
+  display: flex;
+  flex-direction: column;
+}

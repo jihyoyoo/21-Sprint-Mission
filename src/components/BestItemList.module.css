@@ -1,0 +1,13 @@
+
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.itemListImage {
+  width: 282px;
+  height: 282px;
+}
