@@ -30,15 +30,20 @@ function AllItemList({ item }) {
   };
 
   return (
-    
     <div className={styles.itemList}>
-      <img className={styles.itemListImage} src={imageUrl} alt={name} onError={handleError}/>
-      <span>{name}</span>
-      <span>{price}원</span>
-      <div>
-        <img onClick={handlePressHeart} src={isFavorite ? filledHeartImage : emptyHeartImage} alt="" />
-        <span>{pressHeart}</span>
+      <div className={styles.itemListContainer}>
+        <img className={styles.itemListImage} src={imageUrl} alt={name} onError={handleError}/>
+        <div className={styles.textConatiner}>
+          <span className={styles.nameText}>{name}</span>
+          <span className={styles.priceText}>{price}원</span>
+          <div className={styles.heartContainer}>
+            <img className={styles.heartImg} onClick={handlePressHeart} src={isFavorite ? filledHeartImage : emptyHeartImage} alt="" />
+            <span className={styles.heartText}>{pressHeart}</span>
+          </div>
+
+        </div>
       </div>
+
     </div>
   
   );

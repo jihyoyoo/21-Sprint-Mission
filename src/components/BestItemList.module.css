@@ -1,13 +1,48 @@
-
-
 .itemList {
   display: flex;
+
+}
+
+.itemListContainer {
+  display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+
 }
 
 .itemListImage {
   width: 282px;
   height: 282px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+.textConatiner{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-between;
+  
+}
+.nameText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2937;
+}
+.priceText {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2937;
+}
+.heartContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.heartImg {
+  width: 16px;
+  height: 16px;
+}
+.heartText {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4B5563;
 }

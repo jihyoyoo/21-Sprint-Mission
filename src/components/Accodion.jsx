@@ -14,17 +14,22 @@ function Accodion({recent, favorite, onOrderChange, currentOrder}) {
   };
 
   return (
-    <div>
-      <div onClick={() => setIsOpen(!isOpen)}>
-        <span>{currentOrderText}</span>
-        <span>{isOpen ? '▲' : '▼'}</span>
+    <div className={styles.a}>
+      <div className={styles.accodion}>
+        <div className={styles.textBox} onClick={() => setIsOpen(!isOpen)}>
+          <span className={styles.text}>{currentOrderText}</span>
+          <span className={styles.toggle}>{isOpen ? '▲' : '▼'}</span>
+        </div>
       </div>
+      
       {isOpen && (
-        <div className={styles.accodion}>
-          <span onClick={() => handleOrderClick('recent')}>{recent}</span>
-          <span onClick={() => handleOrderClick('favorite')}>{favorite}</span>
+        <div className={styles.accodionContainer}>
+          <span className={styles.recent} onClick={() => handleOrderClick('recent')}>{recent}</span>
+          <span className={styles.favorite} onClick={() => handleOrderClick('favorite')}>{favorite}</span>
         </div>
       )}
+
+      
     </div>
   );
 }

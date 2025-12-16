@@ -1,7 +1,56 @@
-.allItemHead {
+.titleText {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+
+}
+.section {
   display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 426px;
+  margin: 0 auto;
+  margin-top: 24px;
 }
 .allItemBody {
   display: flex;
+  gap: 24px;
   flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.allItemHead {
+  display: flex;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputContainer {
+  display: flex;
+  gap: 10px;
+}
+.inputBox {
+  border-radius: 12px;
+  width: 325px;
+  border: none;
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.itemBtn {
+  background-color: #3692FF;
+  border-radius: 8px;
+  width: 133px;
+  color: #F3F4F6;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

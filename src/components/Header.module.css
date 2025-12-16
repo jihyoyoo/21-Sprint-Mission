@@ -1,4 +1,5 @@
 .header {
+  display: flex;
   max-width: 1920px;
   height: 70px;
   position: sticky;
@@ -7,14 +8,39 @@
   padding: 0 200px;
   background-color: #ffffff;
   border-bottom: 1px solid #DFDFDF;
+  justify-content: space-between;
+}
+.headerContainer {
+  display: flex;
+  
 }
 
 .logo{
+  margin-top: 10px;
   width: 153px;
   height: 51px;
 }
 
+.textBox {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-left: 30px;
+  width: 201px;
+  height: 68px;
+}
+.text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 21px 15px;
+  color: #4B5563;
+}
+
 .profile{
+
+
+  margin-top: 15px;
   width: 40px;
   height: 40px;
 }
