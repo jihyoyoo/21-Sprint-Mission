@@ -1,14 +1,14 @@
 .itemList {
   display: flex;
-  flex-direction: column;
+  text-decoration: none;
 }
 .itemListContainer {
   display: flex;
   flex-direction: column;
 }
 .itemListImage {
-  width: 282px;
-  height: 282px;
+  width: 221px;
+  height: 221px;
   border-radius: 16px;
   margin-bottom: 10px;
 }

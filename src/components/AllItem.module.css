@@ -3,22 +3,25 @@
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 16px 0;
-
 }
 .section {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 426px;
+  max-height: 740px;
   margin: 0 auto;
   margin-top: 24px;
+  margin-bottom: 43px;
 }
 .allItemBody {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 24px; /* 좌우 */
+  row-gap: 40px;
+  width: 1200px;
+  margin-top: 24px;
 }
-ul {
+li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -32,6 +35,13 @@ ul {
 .inputContainer {
   display: flex;
   gap: 10px;
+  position: relative;
+}
+.searchImage {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin: 9px 0 9px 16px;
 }
 .inputBox {
   border-radius: 12px;
@@ -41,6 +51,8 @@ ul {
   color: #9CA3AF;
   font-size: 16px;
   font-weight: 400;
+  padding-left: 44px;
+  cursor: pointer;
 }
 .itemBtn {
   background-color: #3692FF;
@@ -53,4 +65,5 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

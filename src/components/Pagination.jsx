@@ -1,13 +1,8 @@
-// components/Pagination.jsx
-
-import React from 'react';
 import styles from './Pagination.module.css'; 
 
 function Pagination({ currentPage, totalCount, itemPerPage, onPageChange }) {
- 
   const totalPages = Math.ceil(totalCount / itemPerPage);
   const pageLists = [];
-
   const maxPageToShow = 5;
   const currentBlock = Math.ceil(currentPage / maxPageToShow);
   const startPage = (currentBlock - 1) * maxPageToShow + 1;
@@ -34,34 +29,32 @@ function Pagination({ currentPage, totalCount, itemPerPage, onPageChange }) {
   }
 
   return (
-    <div className={styles.paginationContainer}>
-      
-      <button 
-        onClick={handleGoToPrevPage} 
-        disabled={currentPage === 1}
-        className={styles.pageButton}
-      >
-        &lt;
-      </button>
-
-      {pageLists.map((number) => (
-        <button
-          key={number}
-          onClick={() => onPageChange(number)}
-          className={`${styles.pageButton} ${number === currentPage ? styles.active : ''}`}
+    <div className={styles.section}>
+      <div className={styles.paginationContainer}>
+        <button 
+          onClick={handleGoToPrevPage} 
+          disabled={currentPage === 1}
+          className={styles.pageButton}
         >
-          {number}
+          &lt;
         </button>
-      ))}
-
-      <button 
-        onClick={handleGoToNextPage} 
-        disabled={currentPage === totalPages}
-        className={styles.pageButton}
-      >
-        &gt;
-      </button>
-      
+        {pageLists.map((number) => (
+          <button
+            key={number}
+            onClick={() => onPageChange(number)}
+            className={`${styles.pageButton} ${number === currentPage ? styles.active : ''}`}
+          >
+            {number}
+          </button>
+        ))}
+        <button 
+          onClick={handleGoToNextPage} 
+          disabled={currentPage === totalPages}
+          className={styles.pageButton}
+        >
+          &gt;
+        </button>  
+      </div>
     </div>
   );
 }

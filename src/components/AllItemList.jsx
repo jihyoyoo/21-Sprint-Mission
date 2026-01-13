@@ -2,7 +2,7 @@ import emptyHeartImage from '../assets/emptyHeart.png';
 import filledHeartImage from '../assets/filledHeart.png';
 import placeholderImage from '../assets/placeholder.png';
 import { useState } from 'react';
-import styles from './BestItemList.module.css';
+import styles from './AllItemList.module.css';
 
 function AllItemList({ item }) {
   const { name, price, favoriteCount, images} = item; //api에서 props 가져오기
@@ -40,7 +40,6 @@ function AllItemList({ item }) {
             <img className={styles.heartImg} onClick={handlePressHeart} src={isFavorite ? filledHeartImage : emptyHeartImage} alt="" />
             <span className={styles.heartText}>{pressHeart}</span>
           </div>
-
         </div>
       </div>
 

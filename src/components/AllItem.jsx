@@ -1,20 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import Accodion from "./Accodion";
 import styles from './AllItem.module.css';
 import AllItemList from "./AllItemList";
+import searchImage from "../assets/search.png";
 
 function AllItem({ items, onOrderChange, onKeywordChange, currentOrder}) {
+  const navigate = useNavigate();
 
-
-  
-
+  const handleLink = () => {
+    navigate(`/additem`);
+  }
 
   return (
     <div className={styles.section}>
       <div className={styles.allItemHead}>
         <h1 className={styles.titleText}>전체 상품</h1>
         <div className={styles.inputContainer}>
+          <img className={styles.searchImage} src={searchImage}></img>
           <input className={styles.inputBox} type="text" placeholder="검색할 상품을 입력해주세요" onChange={onKeywordChange} />
-          <button className={styles.itemBtn}>상품 등록하기</button>
+          <button className={styles.itemBtn} onClick={handleLink}>상품 등록하기</button>
           <Accodion
             recent="최신순" 
             favorite="좋아요순" 

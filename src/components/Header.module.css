@@ -12,18 +12,15 @@
 }
 .headerContainer {
   display: flex;
-  
 }
-
 .logo{
   margin-top: 10px;
   width: 153px;
   height: 51px;
+  cursor: pointer;
 }
-
 .textBox {
   display: flex;
-  
   justify-content: space-between;
   margin-left: 30px;
   width: 201px;
@@ -35,11 +32,13 @@
   font-weight: 700;
   padding: 21px 15px;
   color: #4B5563;
+  cursor: pointer;
 }
-
+.blue {
+  color: #3692FF;
+}
 .profile{
-
-
+  cursor: pointer;
   margin-top: 15px;
   width: 40px;
   height: 40px;
