@@ -1,5 +1,5 @@
 .titleText {
-  color: #111827;
+  color: var(--gray-80);
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 16px 0;
@@ -47,7 +47,7 @@ li {
   border-radius: 12px;
   width: 325px;
   border: none;
-  background-color: #F3F4F6;
+  background-color: var(--gray-10);
   color: #9CA3AF;
   font-size: 16px;
   font-weight: 400;
@@ -55,10 +55,10 @@ li {
   cursor: pointer;
 }
 .itemBtn {
-  background-color: #3692FF;
+  background-color: var(--blue-10);
   border-radius: 8px;
   width: 133px;
-  color: #F3F4F6;
+  color: var(--gray-10);
   font-size: 16px;
   font-weight: 600;
   border: none;

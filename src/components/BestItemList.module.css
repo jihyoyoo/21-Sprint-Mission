@@ -21,12 +21,12 @@
 .nameText {
   font-size: 14px;
   font-weight: 500;
-  color: #1F2937;
+  color: var( --gray-70);
 }
 .priceText {
   font-size: 16px;
   font-weight: 700;
-  color: #1F2937;
+  color: var( --gray-70);
 }
 .heartContainer {
   display: flex;
@@ -40,7 +40,7 @@
 .heartText {
   font-size: 12px;
   font-weight: 500;
-  color: #4B5563;
+  color: var( --gray-50);
 }
 
 @media (max-width: 744px) {

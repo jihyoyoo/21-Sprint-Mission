@@ -12,7 +12,7 @@ function Accodion({recent, favorite, onOrderChange, currentOrder}) {
   };
 
   return (
-    <div className={styles.a}>
+    <div className={styles.section}>
       <div className={styles.accodion}>
         <div className={styles.textBox} onClick={() => setIsOpen(!isOpen)}>
           <span className={styles.text}>{currentOrderText}</span>

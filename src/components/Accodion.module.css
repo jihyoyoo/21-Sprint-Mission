@@ -1,4 +1,4 @@
-.a {
+.section {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -6,7 +6,7 @@
 .accodion {
   min-height: 42px;
   width: 130px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--border);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   height: 84px;
   width: 130px;
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 12px;
   cursor: pointer;
 }
@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   height: 42px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--border);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -50,7 +50,7 @@
   justify-content: center;
   align-items: center;
   height: 42px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid var(--border);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -59,7 +59,7 @@
 }
 
 @media (max-width: 375px) {
-  .a {
+  .section {
     align-items: flex-end;
   }
   .accodion {
@@ -68,7 +68,7 @@
   }
   .accodionContainer {
     position: absolute;
-    top: 50px;    /* 버튼 바로 아래 배치 */
+    top: 50px; 
     right: -10px;
   }
   .textBox {
@@ -89,6 +89,4 @@
   .text {
     display: none;
   }
-  
-  
 }

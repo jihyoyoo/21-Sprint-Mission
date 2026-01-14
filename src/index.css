@@ -14,8 +14,6 @@ html, body, #root {
   overflow-x: hidden; 
 }
 
-/* index.css 또는 별도의 Font.css 파일 */
-
 @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
@@ -37,7 +35,7 @@ html, body, #root {
 @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
-    font-weight: 400; /* 일반적인 Regular 굵기 */
+    font-weight: 400; 
     font-display: swap;
 }
 @font-face {
@@ -55,7 +53,7 @@ html, body, #root {
 @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
-    font-weight: 700; /* 일반적인 Bold 굵기 */
+    font-weight: 700; 
     font-display: swap;
 }
 @font-face {

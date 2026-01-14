@@ -6,8 +6,8 @@
   top: 0;
   left: 0;
   padding: 0 100px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #DFDFDF;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-20);
   justify-content: space-between;
 }
 .headerContainer {
@@ -31,11 +31,11 @@
   font-size: 18px;
   font-weight: 700;
   padding: 21px 15px;
-  color: #4B5563;
+  color: var( --gray-50);
   cursor: pointer;
 }
 .blue {
-  color: #3692FF;
+  color: var(--blue-10);
 }
 .profile{
   cursor: pointer;
@@ -78,6 +78,4 @@
   .text{
     font-size: 16px;
   }
-  
-  
 }
