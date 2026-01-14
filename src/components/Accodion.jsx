@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import styles from './Accodion.module.css';
+import sortImage from '../assets/sort.png';
 
 function Accodion({recent, favorite, onOrderChange, currentOrder}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ function Accodion({recent, favorite, onOrderChange, currentOrder}) {
       <div className={styles.accodion}>
         <div className={styles.textBox} onClick={() => setIsOpen(!isOpen)}>
           <span className={styles.text}>{currentOrderText}</span>
+          <img src={sortImage} className={styles.sortImage} />
           <span className={styles.toggle}>{isOpen ? '▲' : '▼'}</span>
         </div>
       </div>

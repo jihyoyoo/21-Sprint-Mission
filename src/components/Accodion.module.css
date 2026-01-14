@@ -54,3 +54,41 @@
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+.sortImage {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .a {
+    align-items: flex-end;
+  }
+  .accodion {
+    width: 42px;
+    height: 42px;
+  }
+  .accodionContainer {
+    position: absolute;
+    top: 50px;    /* 버튼 바로 아래 배치 */
+    right: -10px;
+  }
+  .textBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .sortImage {
+    display: block; 
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .toggle {
+    display: none; 
+  }
+  .text {
+    display: none;
+  }
+  
+  
+}

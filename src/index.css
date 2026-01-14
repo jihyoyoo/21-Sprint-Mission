@@ -7,11 +7,11 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-    box-sizing: border-box;
+html, body, #root {
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; 
 }
 
 /* index.css 또는 별도의 Font.css 파일 */

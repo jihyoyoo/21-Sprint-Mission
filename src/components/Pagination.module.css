@@ -1,5 +1,6 @@
 .section {
-  max-height: 40px;
+  width: 304PX;
+  height: 40px;
   margin: 0 auto;
   margin-bottom: 58px;
 }
@@ -7,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
 }
 .pageButton {
   border: 1px solid #ccc;
@@ -15,7 +17,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%; 
-  margin: 0 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.2s, color 0.2s;
@@ -32,4 +33,16 @@
 .pageButton:disabled {
   cursor: not-allowed;
   opacity: 0.5;
+}
+
+@media (max-width: 744px) { 
+  .section {
+    margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    margin-bottom: 35px; 
+  }
 }

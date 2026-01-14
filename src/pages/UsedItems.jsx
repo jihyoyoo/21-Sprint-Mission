@@ -10,17 +10,18 @@ function UsedItems() {
   const [ items, setItems ] = useState([]);
   const [ keyword, setKeyword ] = useState('');
   const [ order, setOrder ] = useState('recent');
-  const [ bestItems, setBestItems] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1); //현재 페이지 번호
-  const [totalCount, setTotalCount] = useState(0); //전체 아이템 개수
-  
-  const itemPerPage = 10;
+  const [ bestItems, setBestItems ] = useState([]);
+  const [ currentPage, setCurrentPage ] = useState(1); 
+  const [ totalCount, setTotalCount ] = useState(0); 
+  const [ itemPerPage, setItemPerPage ] = useState(10);
+  const [ bestItemPerPage, setBestItemPerPage ] = useState(4);
+
   const handleKeywordChange = (e) => {
     setKeyword(e.target.value); 
     setCurrentPage(1); 
-};
+  };
   
-  //api 데이터에서 자동으로 정렬한 데이터 가져오기
+  //전체 상품 불러오기
   const handleLoad = useCallback(async (orderParam, pageParam, keywordParam) => {
     const response = await axios.get('/products', {
       params: {
@@ -33,13 +34,14 @@ function UsedItems() {
     const { list, totalCount } = response.data;
     setItems(list);
     setTotalCount(totalCount);
-  }, []);
+  }, [itemPerPage]);
   
-  const handleLoadBestItems = useCallback(async () => {
+  //베스트 상품 불러오기
+  const handleLoadBestItems = useCallback(async (pageParam) => {
     const response = await axios.get('/products', {
       params: {
         orderBy: 'favorite',
-        pageSize: 4,
+        pageSize: pageParam,
         page: 1,
       }
     });
@@ -53,12 +55,31 @@ function UsedItems() {
 
   useEffect (() => {
     handleLoad(order, currentPage, keyword); 
-  }, [order, currentPage, keyword, handleLoad]);
+  }, [order, currentPage, keyword, handleLoad, itemPerPage]);
 
   useEffect(() => {
-    handleLoadBestItems();
-  }, [handleLoadBestItems]);
+    handleLoadBestItems(bestItemPerPage);
+  }, [handleLoadBestItems, bestItemPerPage]);
 
+  useEffect(() => {
+    const updatePageSize = () => {
+      const width = window.innerWidth;
+      if (width <= 376) {     
+        setItemPerPage(4);
+        setBestItemPerPage(1);
+      } else if (width <= 744) { 
+        setItemPerPage(6);
+        setBestItemPerPage(2);
+      } else {                   
+        setItemPerPage(10);
+        setBestItemPerPage(4);
+      }
+    };
+
+    updatePageSize(); 
+    window.addEventListener('resize', updatePageSize);
+    return () => window.removeEventListener('resize', updatePageSize);
+  }, []);
 
   return (
     <>

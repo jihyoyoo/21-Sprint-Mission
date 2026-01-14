@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  padding: 0 200px;
+  padding: 0 100px;
   background-color: #ffffff;
   border-bottom: 1px solid #DFDFDF;
   justify-content: space-between;
@@ -42,4 +42,42 @@
   margin-top: 15px;
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 744px) { 
+  .header {
+    padding: 0 24px; 
+    height: 100%;
+  }
+  .textBox {
+    margin-left: 15px;
+    width: auto; 
+  }
+  .text {
+    font-size: 18px;
+    padding: 21px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 0 16px; 
+    height: 100%;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    content: url('../assets/textLogo.png');
+    width: 82px;
+    height: 27px;
+    margin: 0;
+  }
+  .text{
+    font-size: 16px;
+  }
+  
+  
 }

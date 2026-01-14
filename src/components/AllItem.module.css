@@ -7,7 +7,8 @@
 .section {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   max-height: 740px;
   margin: 0 auto;
   margin-top: 24px;
@@ -16,9 +17,8 @@
 .allItemBody {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  column-gap: 24px; /* 좌우 */
+  column-gap: 24px; 
   row-gap: 40px;
-  width: 1200px;
   margin-top: 24px;
 }
 li {
@@ -66,4 +66,82 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+@media (max-width: 744px) { 
+  .section {
+    padding: 0 24px;
+    width: auto;
+  }
+  .allItemBody {
+    grid-template-columns: repeat(3, 1fr); 
+    row-gap: 40px;
+    column-gap: 16px;
+  }
+  .inputBox {
+    width: 242px;
+  }
+  li {
+    width: 220px;
+    height: 317px;
+  }
+  .titleText {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    max-width: 344px;
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .allItemHead {
+    margin-bottom: 56px;
+  }
+  li {
+    width: 168px;
+    height: auto;
+  }
+  .searchImage {
+    position: absolute;
+    top: 51px;
+    left: -210px;
+    z-index: 10;
+  }
+  .itemBtn {
+    width: 134px;
+    height: 40px;
+  } 
+  .allItemBody {
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 8px;
+  }
+  .inputBox {
+    position: absolute;
+    top: 50px; 
+    right: 50px; 
+    width: 235px; 
+    height: 42px;
+    margin-right: 14px;
+  }
+  .titleText {
+    font-size: 18px;
+    margin: 0;
+  }
+  .inputContainer > :last-child {
+    position: absolute;
+    top:  50px;
+    right: 16px;
+    width: 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  } 
 }

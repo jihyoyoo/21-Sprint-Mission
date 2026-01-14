@@ -53,3 +53,28 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 744px) { 
+  .section {
+    padding: 0 24px;
+    width: auto;
+    margin-bottom: 90px;
+  }
+  .allItemBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 0 16px;
+    width: auto;
+    margin-bottom: 80px;
+  }
+  .allItemBody {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+}

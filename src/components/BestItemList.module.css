@@ -42,3 +42,25 @@
   font-weight: 500;
   color: #4B5563;
 }
+
+@media (max-width: 744px) {
+  .itemList {
+    width: 343px;
+    height: 482px;
+  }
+  .itemListImage {
+    width: 343px;
+    height: 343px;
+  }
+}
+
+@media (max-width: 375px) {
+  .itemList {
+    width: 343px;
+    height: 482px;
+  }
+  .itemListImage {
+    width: 343px;
+    height: 343px;
+  }
+}
